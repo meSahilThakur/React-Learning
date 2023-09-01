@@ -21,7 +21,7 @@ function App() {
     <>
     <h1>Welcome to Counter App</h1>
     <h2>Here you can increase or decrease counter between 0 to 20</h2>
-    <div>Counter Value : <span className='counter-color'>{counter}</span></div>
+    <div>Counter Value : <span className='counter-box'>{counter}</span></div>
     <br />
     <button onClick={increaseCounter}>Increase</button>
     <button onClick={()=>decreaseCounter()}>Decrease</button> 
