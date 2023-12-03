@@ -5,13 +5,10 @@ import UserContextProvider from "./context/UserContextProvider";
 function App() {
   return (
     <UserContextProvider>
-      <div className="w-full h-screen bg-gray-700 ">
+      <div className=" w-full h-screen bg-gray-700 flex flex-col justify-center items-center">
         <h1 className="text-center text-3xl font-extrabold pt-6">MiniContextAPI</h1>
-        <div className=" w-full h-full flex flex-col justify-center items-center">
         <Login />
         <Profile />
-        </div>
-        
       </div>
     </UserContextProvider>
   );
