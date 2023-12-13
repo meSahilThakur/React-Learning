@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addTodo, removeTodo, updateTodo, toggleComplete } from './features/todo/todoSlice';
 import AddTodo from './components/AddTodo';
+import Todos from './components/Todos';
 
 function App() {
   const dispatch = useDispatch();
@@ -33,7 +34,10 @@ function App() {
       <div>
         <AddTodo />
       </div>
-      <ul>
+      <div>
+        <Todos />
+      </div>
+      {/* <ul>
         {todos.map((todo) => (
           <li key={todo.id}>
             <span style={{ textDecoration: todo.completed ? 'line-through' : 'none' }}>{todo.text}</span>
@@ -46,7 +50,7 @@ function App() {
             />
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 
